@@ -1,0 +1,153 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/html" xmlns="http://www.w3.org/1999/html">
+  <head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>3D-TECH</title>
+
+    <link rel="stylesheet" href="{% static 'css/bootstrap.css' %}">
+    <link rel="stylesheet" href="{% static 'css/Slider_Style.css' %}">
+    <link rel="stylesheet" href="{% static 'css/custom-styles.css' %}">
+    <link rel="stylesheet" href="{% static 'css/image-effects.css' %}">
+    <link rel="stylesheet" href="{% static 'css/Dropdown_menu.css' %}">
+    <link rel="shortcut icon" href="{% static 'img/' %}" type="image/x-icon">
+
+
+    <style>
+        html { overflow-x: hidden}
+    </style>
+
+
+    </head>
+
+
+  <body>
+
+
+    <div>
+        <div class="row">
+          <div class="site-header spacing-t">
+            <div class="col-md-3 ">
+                <h1>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp3D Тechologies</h1>
+                <h3>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspFuture start here</h3>
+            </div>
+              <div class="col-md-9">
+            <nav class="navbar pull-right">
+            <div class="navbar-header"></div>
+              <div>
+                    <ul class="nav navbar-nav">
+                    <li class="active"><a href="{% url 'landing'%}">Главная</a></li>
+                    <li><a href="{% url ' news_page'%}">Новости</a></li>
+                    <li><a href="{% url 'items'%}">Оборудование</a></li>
+                    <li><a href="{% url 'test'%}" >Наш блог</a></li>
+                    </ul>
+             </div>
+            </nav>
+          </div>
+          </div>
+        </div>
+    </div>
+
+
+      <div>
+          <br> <br> <br> <br> <br> <br>
+      </div>
+
+
+    <div class="container">
+      <div class="banner">
+        <div class="banner-item">
+
+          <div class="box1 radi-c1">
+            <a href = "{% url 'blockpage1'%}"><h3>Что такое 3D технологии</h3></a>
+          </div>
+        </div>
+        <div class="banner-item">
+          <div class="box2 radi-c2">
+            <a href = "{% url 'blockpage2'%}"><h3>Как работает 3D принтер?</h3></a>
+          </div>
+        </div>
+
+        <div class="banner-item">
+          <div class="box3 r    adi-c4">
+            <a href = "{% url 'blockpage3'%}"><h3>Области применения 3D печати</h3></a>
+          </div>
+        </div>
+
+        <div class="banner-item ">
+          <div class="box4 radi-c3">
+            <a href = "{% url 'blockpage4'%}"><h3>Материалы для 3d печати</h3></a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+      <div class="container">
+        <div><br><br><br><br></div>
+      <div class="ruler"></div>
+    </div>
+
+
+    <div>
+        <br>
+    </div>
+
+
+
+
+
+
+
+      <div class="container">
+        <div class="featured-blocks">
+          <div class="row">
+              <div class=" col-md-4">
+    <div class="thumbnail">
+     <img class="bw"  alt="" src ="{%static "img/umniydom.png"%}" ><br>
+      <div class="caption">
+        <h2>«Умный» 3D-напечатанный дом</h2>
+        <p><br>
+                </p>
+        <p> <a href="{% url 'news1'%}" class="btn btn-default" role="button">ПОДРОБНЕЕ</a></p>
+      </div>
+    </div>
+  </div>
+
+
+        <div class=" col-md-4">
+    <div class="thumbnail"><br><br><br><br>
+     <img class="bw"  alt="" src={% static "img/selfi.png" %}><br><br><br><br>
+      <div class="caption">
+        <h3>Печать 3D-сэлфи: новая услуга Shapeways</h3>
+        <p>
+<br>
+        </p>
+        <p> <a href="{% url 'news2'%}" class="btn btn-default" role="button">ПОДРОБНЕЕ</a></p>
+      </div>
+    </div>
+  </div>
+
+
+  <div class=" col-md-4">
+    <div class="thumbnail">
+      <img class="bw"  alt="" src={% static "img/ferrari.jpg" %}>
+      <div class="caption">
+        <h3>Ferrari использует 3D печать для разработки нового двигателя для сезона 2017 года F1</h3>
+        <p></p>
+        <p> <a href="{% url 'news3'%}" class="btn btn-default" role="button">ПОДРОБНЕЕ</a></p>
+      </div>
+    </div>
+  </div>
+        </div>
+            </div>
+          </div>
+
+
+  </body>
+</html>
